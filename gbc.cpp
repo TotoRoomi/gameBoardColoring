@@ -83,8 +83,8 @@ BFS(int **M, vector<vector<vector< pair<int, int> >>> &adj_list,int *n)
 void
 board_coloring(int **M, int *n, int* k, int* l)
 {
-  if (*k > *n/2 or *l > *n/2){
-    cout << "Too small n";
+  if (*k > (*n-(*n/2)) or *l > (*n-(*n/2))){
+    cout << "Too small n\n";
     cout.flush();
     return;
   }
@@ -130,7 +130,7 @@ board_coloring(int **M, int *n, int* k, int* l)
        }
 
      if (added == 0){
-       cout << "M["<<x<<"]["<<y<<"] "<< " has no possible moves";
+       cout << "M["<<x<<"]["<<y<<"] "<< " has no possible moves\n";
        cout.flush();
        return;
      }
