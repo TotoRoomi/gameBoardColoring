@@ -6,7 +6,7 @@ To compile: ```g++ -o gbc gbc.cpp```
 
 To run:     ```./gbc```
 
-n = size of board
+n = size of board nxn
 
 k = vertikal or horisontal steps
 
