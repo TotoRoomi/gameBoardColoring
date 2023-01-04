@@ -84,7 +84,7 @@ void
 board_coloring(int **M, int *n, int* k, int* l)
 {
   if (*k > (*n-(*n/2)) or *l > (*n-(*n/2))){
-    cout << "Too small n\n";
+    cout << "\nToo small n for your chosen k or l\n";
     cout.flush();
     return;
   }
@@ -125,7 +125,7 @@ board_coloring(int **M, int *n, int* k, int* l)
          added++;
        }
        if (x - *l>=0 && x - *l <= *n-1 && y - *k >= 0 && y - *k <= *n-1){
-         v1d.push_back({x-*l,y-*l});
+         v1d.push_back({x-*l,y-*k});
          added++;
        }
 
